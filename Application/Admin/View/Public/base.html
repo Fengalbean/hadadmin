@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" type="text/css" href="__CSS__/Base/bootstrap/3.3.0/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/App/admin/index.css">
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/App/admin/public.css">-->
+    <block name="css"></block>
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/Base/easyui/default/easyui.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/Base/easyui/icon.css">-->
+    <link rel="stylesheet" type="text/css" href="__CSS__/Base/siderbar/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/Base/siderbar/css/style.css">
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/App/admin/public.css">-->
+    <script type="text/javascript" src="__JS__/Lib/seajs/2.3.0/sea.js"></script>
+    <script type="text/javascript" src="__JS__/Conf/adminConfig.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="global-fluid">
+    <div class="global-container">
+        <div id="header">
+            <h3 class="text-center">海德在线</h3>
+        </div>
+        <div id="sidebar"><include file="Public/sidebar" /></div>
+    </div>
+</div>
+<!--主题内容-->
+<div id="content">
+    <block name="breadcrumb">
+        <ol class="breadcrumb" >
+            <li><a href="#">网站管理</a></li>
+            <li><a href="#">图片管理</a></li>
+            <li class="active">新闻管理</li>
+        </ol>
+    </block>
+    <block name="main">saddsasdsadsa</block>
+</div>
+<script type="text/javascript">
+    seajs.use('base/siderbar.js');
+</script>
+<block name="footer-js"></block>
+</body>
+</html>

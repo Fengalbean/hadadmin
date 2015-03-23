@@ -1,0 +1,73 @@
+<extend name="Public:base" />
+<block name="css">
+    <load href="__CSS__/App/home/news.css" />
+</block>
+<block name="content">
+    <div class="had-container" >
+        <!--左侧导航-->
+        <div class="news-nav">
+            <ul >
+                <li ><a data-id="1" href="#companyNews" >公司新闻</a></li>
+                <li ><a data-id="2" href="#industryInformation" >行业资讯</a></li>
+                <li ><a data-id="3" href="#companyAnnounce" >企业公布</a></li>
+            </ul>
+        </div>
+        <!--公司新闻-->
+        <div id="companyNews" class="section-common div-center" style="min-height: 400px;">
+            <div class="word-pic pic-center"><img src="__IMG__/news.png"></div>
+            <h3 style="color: #ffa54a;padding-top: 25px;">公司新闻</h3>
+            <ul class="news-ul">
+                <volist name="list" id="vo">
+                    <li><a href="" class="news-list" data-id="{$vo.id}"  target="_blank">{$vo.title}</a> <span style="float: right">{$vo.newsdate}</span></li>
+                </volist>
+                <gt name="count" value="10">
+                    <li><a href="">更多···</a></li>
+                </gt>
+                <!--<li><a href="annualMeeting.html" target="_blank">海德在线2015年会</a> <span style="float: right">2015-02-07</span></li>-->
+                <!--<li><a href="homeService.html" target="_blank">开呗2.0推出上门保养服务</a> <span style="float: right">2015-02-04</span></li>-->
+                <!--<li><a href="productRename.html" target="_blank">91车助手正式更名“开呗”</a> <span style="float: right">2015-01-17</span></li>-->
+                <!--<li><a href="carWash.html" target="_blank">1分钱洗车活动</a> <span style="float: right">2015-01-11</span></li>-->
+                <!--<li><a href="detection.html" target="_blank">1元钱检测活动</a> <span style="float: right">2015-01-11</span></li>-->
+                <!--<li><a href="presentation.html" target="_blank">开呗产品发布会</a> <span style="float: right">2014-12-18</span></li>-->
+                <!--<li><a href="kaibei.html" target="_blank">91车助手APP1.0盛大上线庆功晚宴</a> <span style="float: right">2014-11-29</span></li>-->
+                <!--<li><a href="shaoguang.html" target="_blank">绍光车业董事长何绍华先生莅临海德在线洽谈合作</a> <span style="float: right">2014-11-22</span></li>-->
+                <!--<li><a href="move.html" target="_blank">热烈庆祝海德在线乔迁之喜</a> <span style="float: right">2014-11-16</span></li>-->
+                <!--<li><a href="carFriends.html" target="_blank">91车助手车友会车友莅临海德在线参观</a> <span style="float: right">2014-12-05</span></li>-->
+                <!--<li><a href="dream.html" target="_blank">我有一个梦想———海德在线第一次公司战略级全员头脑风暴会议圆满落幕</a> <span style="float: right">2014-06-05</span></li>-->
+            </ul>
+
+
+
+
+        </div>
+        <!--行业资讯-->
+        <div id="industryInformation" class="section-common div-center" style="min-height: 150px;">
+            <h3 style="color: #ffa54a;">行业资讯</h3>
+            <ul class="news-ul">
+                <li><a href="innovate.html" target="_blank">私家车主+汽车实体店+第三方平台=创新</a><span style="float: right;color: #000">2014-09-30</span></li>
+                <li><a href="internet.html" target="_blank">汽车后市场互联网思维,这7点你必须知道!</a><span style="float: right;color: #000">2014-09-30</span></li>
+                <li><a href="marketsize.html" target="_blank">中国汽车后市场规模超7000亿 各路资本淘金</a><span style="float: right;color: #000">2014-12-06</span></li>
+                <li><a href="upgrade.html" target="_blank">汽修店如何升级做O2O</a><span style="float: right;color: #000">2014-12-18</span></li>
+            </ul>
+        </div>
+        <!--企业发布-->
+        <div id="companyAnnounce" class="section-common div-center" style="height: 250px;">
+            <h3 style="color: #ffa54a;">企业发布</h3>
+            <ul class="news-ul">
+                <li><a href="kb.html" target="_blank">开呗2.0正式上线</a> <span style="float: right">2015-02-06</span></li>
+                <li><a href="czsApp.html" target="_blank">91车助手即将隆重上线、启动盛大公测</a><span style="float: right;color: #000">2014-12-18</span></li>
+                <li><a href="movein.html" target="_blank">海德在线乔迁新址</a><span style="float: right;color: #000">2014-11-03</span></li>
+            </ul>
+        </div>
+    </div>
+</block>
+<block name="footer">
+    <include file="Public:footer" />
+</block>
+<block name="js">
+    <script type="text/javascript">
+        seajs.use('newsController.js',function(main){
+            main.base();
+        });
+    </script>
+</block>

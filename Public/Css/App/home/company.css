@@ -1,0 +1,98 @@
+.company-nav {
+    width: 120px;
+    min-height: 200px;
+    background: #ececec;
+    position: fixed;
+    top: 102px;
+
+}
+.company-nav li {
+    width: 120px;
+    height: 35px;
+    margin-left: -40px;
+    line-height: 35px;
+    text-align: center;
+    list-style: none;
+    margin-top: 5px;
+}
+.company-nav li:hover{
+    background: #ff9326;
+}
+.company-nav a {
+    /*width: 120px;*/
+    /*height: 35px;*/
+    color: #2C3E50;
+    text-decoration: none;
+}
+.company-nav a:hover {
+    cursor: pointer;
+    /*background: #ffa54a;*/
+    text-decoration: none;
+}
+
+.section-intro {
+    width: 1000px;
+    height: 500px;
+    background: #ffffff;
+    border-bottom: 2px solid #eaeaea;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.section-ceo {
+    width: 1000px;
+    height: 1050px;
+    border-bottom: 2px solid #eaeaea;
+}
+.section-ceo .word-pic {
+    width: 210px;
+    height: 210px;
+}
+.section-ceo .pic-intro {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+}
+.section-common .person-show {
+    width: 250px;
+    height: 350px;
+    margin-left: 30px;
+    float: left;
+    margin-top: 40px;
+
+}
+.pic-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.person-show .show-title {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+
+}
+.person-show .show-pic {
+    width:200px;
+    height: 200px;
+
+}
+.pic-scale {
+    width: 90%;
+    height: 90%;
+}
+.pic-scale-y {
+    width: 98%;
+    height: 98%;
+}
+.person-show .show-words {
+    height: 100px;
+    width: 200px;
+    text-align: left;
+    margin-top: 20px;
+    color: #303030;
+}
+.omit:hover {
+    background: wheat;
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+.business-nav {
+    width: 120px;
+    min-height: 180px;
+    background: #ececec;
+    padding-top: 5px;;
+    position: fixed;
+    /*top:150px;*/
+}
+.business-nav li {
+    width: 120px;
+    height: 35px;
+    margin-left: -40px;
+    /*margin-right: auto;*/
+    line-height: 35px;
+    text-align: center;
+    list-style: none;
+    margin-top: 5px;
+}
+.business-nav li:hover{
+    background: #ff9326;
+}
+.business-nav a {
+    /*width: 120px;*/
+    /*height: 35px;*/
+    color: #2C3E50;
+    text-decoration: none;
+}
+.business-nav a:hover {
+    cursor: pointer;
+    /*background: #ffa54a;*/
+    text-decoration: none;
+}

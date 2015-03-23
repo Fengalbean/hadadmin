@@ -1,0 +1,32 @@
+.investor-nav {
+    width: 120px;
+    min-height: 140px;
+    background: #ececec;
+    padding-top: 6px;;
+    position: fixed;
+    /*top:150px;*/
+}
+.investor-nav li {
+    width: 120px;
+    height: 35px;
+    margin-left: -40px;
+    /*margin-right: auto;*/
+    line-height: 35px;
+    text-align: center;
+    list-style: none;
+    margin-top: 5px;
+}
+.investor-nav li:hover{
+    background: #ff9326;
+}
+.investor-nav a {
+    /*width: 120px;*/
+    /*height: 35px;*/
+    color: #2C3E50;
+    text-decoration: none;
+}
+.investor-nav a:hover {
+    cursor: pointer;
+    /*background: #ffa54a;*/
+    text-decoration: none;
+}

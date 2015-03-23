@@ -1,0 +1,75 @@
+.global-footer {
+    width: 100%;
+    height: 400px;
+    background: #666666;
+}
+.global-footer .title-font {
+    color: #ffffff;
+    font-size: 18px;
+}
+.global-footer .section-one {
+    padding-top: 50px;
+    width: 200px;
+    height: auto;
+    text-align: left;
+    float: left;
+}
+.footer-copyright a {
+    color:#dcdcdc;
+}
+.footer-copyright a:hover {
+    color:  #ffffff;
+    text-decoration: none;
+}
+.section-one li {
+    width: 120px;
+    list-style: none;
+    margin-top: 16px;
+    margin-left: 50px;
+}
+.section-one a {
+    text-decoration: none;
+    color: #cacaca;
+    font-size: 17px;
+}
+.section-one li a:hover {
+    background: #ff9326;
+    text-decoration: none;
+}
+.global-footer .section-two {
+    padding-top: 50px;
+    width: 130px;
+    height: auto;
+    text-align: left;
+    margin-left: 30px;
+    float: left;
+}
+
+.section-two li {
+    width: 120px;
+    list-style: none;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+.section-two a {
+    text-decoration: none;
+    color: #cacaca;
+    font-size: 17px;
+}
+.section-two li a:hover {
+    background: #ff9326;
+    text-decoration: none;
+}
+.slideUp {
+    position:fixed;
+    right:40px;
+    bottom:150px;
+    width: 80px;
+    height: 40px;
+    /*background-image: url('../images/backtop.png')*/
+}
+.slideUp:hover {
+    /*width: 41px;*/
+    /*height: 81px;*/
+    opacity: 0.8;
+}

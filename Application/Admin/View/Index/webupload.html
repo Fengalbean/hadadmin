@@ -1,0 +1,28 @@
+<extend name="Public:base" />
+<block name="css">
+    <load href="__CSS__/Base/webupload/webuploader.css" />
+</block>
+<block name="main">
+    <div class="had-container">
+        <div class="panel panel-info">
+            <div class="panel-heading">首页图片管理</div>
+            <div class="panel-body">
+                <div id="uploader-section">
+                    <!--用来存放item-->
+                    <div id="fileList" class="uploader-list"></div>
+                    <div id="filePicker">选择图片</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="footer">
+    <include file="Public:footer" />
+</block>
+<block name="js">
+    <script type="text/javascript">
+        seajs.use('webUploadController.js',function(main){
+            main.base();
+        });
+    </script>
+</block>

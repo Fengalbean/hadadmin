@@ -1,0 +1,83 @@
+
+.header-border-bottom {
+    border-bottom: 1px  #808080;
+    background: #eeeeee;
+    box-shadow: 0 0 5px 0 #888888;
+}
+.header {
+    height: 100px;
+    background: #eeeeee;
+
+}
+/* 导航 */
+.nav-container {
+    width: 1230px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hadlink-logo {
+    height: 98px;
+    width:230px;
+    line-height: 98px;
+    float: left
+}
+.nav-bar {
+    padding-top: 60px;
+}
+.nav-bar li {
+    list-style: none;
+    float: left;
+    width: 140px;
+    height: 40px;
+    border-right:1px solid #cccccc;
+    text-align: center;
+    line-height: 40px;
+}
+.nav-bar li:first-of-type {
+    width: 160px;
+}
+
+.nav-bar  a {
+    display: block;
+    /*width: 105px;*/
+    /*height: 40px;*/
+    text-decoration: none;
+    font-size: 18px;
+    color: #303030;
+}
+.nav-bar li a:hover {
+    color: #ffa54a;
+    text-decoration: none;
+}
+.nav-bar >li:hover {
+    /*background: #ff9326;*/
+    border-bottom: 5px solid #ffa54a;
+}
+.nav-bar li:last-of-type {
+    border-right: 0;
+}
+
+.nav-bar  li:hover .sub-nav {
+    display: block;
+}
+.sub-nav {
+    width: 105px;
+    /*min-height: 200px;*/
+    line-height: 35px;
+    text-align: center;
+    background: #ECF0F1;
+    display: none;
+    position: relative;
+}
+.sub-nav li {
+    width: 105px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: -40px;
+    margin-top: 5px;
+}
+.sub-nav li:hover {
+    background: #ff9326;
+}

@@ -1,0 +1,33 @@
+
+<extend name="Public:base" />
+<block name="css">
+    <load href="__CSS__/App/home/header.css" />
+    <load href="__CSS__/App/home/index.css" />
+</block>
+<block name="content">
+    <div class="main-content">
+        <div class="main-container" id="container">
+            <button id="close" type="button" class="btn btn-lg" style="position: absolute;margin-left: 1000px;margin-top: 1px;">
+                <span class="glyphicon glyphicon-remove"></span>
+            </button>
+            <div id="windowInfo" class="alert-window">
+                <a href="productRename.html"> <img src="__IMG__/shouye.jpg" alt="" width="1000" height="749" ></a>
+            </div>
+            <div class="about-us m-top-1 view"><a href="companyInfo.html#companyIntro"><img src="__IMG__/aboutus.png"></a></div>
+            <div class="latest-news m-top-2 view"><a href="news.html#companyNews"><img src="__IMG__/latest.png"></a></div>
+            <div class="industry m-top-3 view" ><a href="news.html#industryInformation"><img src="__IMG__/industry.png"></a></div>
+            <div class="product-info m-top-4 view"><a href="businessSystem.html#kaiba"><img src="__IMG__/product.png"></a></div>
+            <div class="invite-telents m-top-5 view"><a href="cooperate.html#talentJoin"><img src="__IMG__/invaite.png"></a></div>
+        </div>
+    </div>
+</block>
+<block name="footer">
+    <include file="Public:footer" />
+</block>
+<block name="js">
+    <script type="text/javascript">
+        seajs.use('indexController.js',function(main){
+            main.index();
+        });
+    </script>
+</block>

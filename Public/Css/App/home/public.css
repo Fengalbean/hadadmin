@@ -1,0 +1,17 @@
+.global-fluid {
+    width: 100%;
+}
+.had-container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top:2px;
+}
+.div-center {
+    margin-left: auto;
+}
+.section-common {
+    width: 1000px;
+    border-bottom: 2px solid #eaeaea;
+    overflow: hidden;
+}

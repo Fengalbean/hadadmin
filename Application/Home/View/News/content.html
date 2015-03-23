@@ -1,0 +1,53 @@
+<extend name="Public:base" />
+<block name="css">
+    <load href="__CSS__/App/home/news.css" />
+</block>
+<block name="content">
+    <div class="had-container" >
+        <div class="news-center">
+            <!--<a href="news.html"><img src="__IMG__/newscenter.png" alt="新闻中心"></a>-->
+        <span>&nbsp;&nbsp;
+          <a class="bread-crumbs" href="news.html">  新闻中心</a>
+            <span class="bread-crumbs">></span>
+            <a class="bread-crumbs" href="news.html#companyNews">公司新闻</a>
+        </span>
+        </div>
+        <div id="companyNews" class="section-news" >
+
+        </div>
+        <h3>{$data[0]['title']}</h3>
+        <!--<p>{$data[0]['content']}</p>-->
+        <p>
+        </p><h3 style="text-align:center">{$data[0]['title']}</h3>
+        <h4 style="text-align:center; color:#666">发布日期：2014-9-30</h4>
+        <hr style="border: 1px solid #808080;">
+        <br>
+        <p class="p-low">
+            汽车后市场领域发展至今一直成为热议话题，从汽车后市场综合服务平台——汽车上门洗车——汽车上门保养——？？？（也许会是快修）下一个商家到底在何处？笔者一一解析！</p>
+        <p class="p-low"> 作为一名私家车主，从购车到出保——选择汽车实体店服务店（维修厂）基于传统模式，普遍情况是亲朋好友的口碑宣传，那么私家车主何时开始选择将跳出传统领域，走进互联网或移动互联时代，首先考虑的是品牌的认可度、知名度、可信度等，再考虑质量问题、服务问题。有些前卫的私家车主，拥有一刻好奇的心或互联网思维，进行体验。</p>
+        <p class="p-low"> 汽车实体店boss大部分还是以传统玩法进行中，选址——装修——营业——服务周边人群——不温不热状态——如果没有主推产品、过硬技术、高效率的服务，基本活不长。那么还有一部分boss再尝试或已经走在互联网的路上。以传统的营销策略上，增加互联网投放，营业额基本处于增长状态。</p>
+
+        <p class="p-low">
+            第三方服务平台每日都在研究最新的商业模式、细节的完善、资金的保证、人员的培训等等一系列标准化体系，都想成为业内的一道亮丽风景线，成为标杆，让后人效仿。但汽车后市场领域发展速度甚快，在做内部优化阶段，如果用户忽略，最终笔者看来，也不会太理想。
+        </p>
+
+        <p class="p-low">
+            如今中国汽车市场速度如日冲天，很多私家车主购买爱车后，由于对爱车缺乏专业知识+4S店销售人员添油加醋，导致新车主或准车主车辆再保内基本都在4S店进行爱车养护。毫无疑问4S店价格确实太高了，但作为车主，我如何选择一个靠谱维修厂呢？基本来源亲朋好友介绍，但质量和服务确实说不好，于是通过互联网了解第三方服务平台，通过第三方服务平台选择维修厂，如在维修、保养过程中出现问题，第三方平台是否能够优先处理用户问题等等，因体系不够完善。
+        </p>
+
+        <p class="p-low">
+            所谓的创新就是将别人看不起眼、不想做的、不愿意做的事情进行资源整合，说句简单的，也就是车友会的运营，进行零散车友会资源整合。就笔者了解，如今主流汽车媒体BBS将把精力从一线城市转入到二三线城市，选择地方车友会进行合作，并利用一切可执行的方案进行拉拢，从而实现自身庞大的车友（用户）体系，我们不能看出，各大主流媒体也开始蠢蠢欲动，只不过是时机不成熟而已。那么这些主流媒体最终会成功整合这些车友会吗？也许是一个未知数！
+        </p>
+
+    </div>
+</block>
+<block name="footer">
+    <include file="Public:footer" />
+</block>
+<block name="js">
+    <script type="text/javascript">
+        seajs.use('newsController.js',function(main){
+            main.base();
+        });
+    </script>
+</block>
